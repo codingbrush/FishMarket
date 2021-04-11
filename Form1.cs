@@ -14,6 +14,12 @@ namespace FishMarket
         public Form1()
         {
             InitializeComponent();
+            DateLbl.Text = DateTime.Now.ToLongDateString();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            TimeLbl.Text = DateTime.Now.ToString("hh:mm:ss tt");
         }
     }
 }
